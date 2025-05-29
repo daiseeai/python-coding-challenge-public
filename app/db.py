@@ -22,6 +22,8 @@ def init_db():
     # Add sample data if the database is empty
     db = SessionLocal()
     try:
+        # NOTE: Why are we importing `Product` here?
+        # What issues could this cause?
         from .models import Product
 
         # Check if we have any products
