@@ -8,8 +8,9 @@ from fastapi import APIRouter
 # from sqlalchemy.exc import IntegrityError
 # from ..schemas import Product as ProductSchema, ProductCreate, CategoryStats
 
+# NOTE: This import is `required` here to successfully initialize the DB?
+# Why? What could you change here?
 from ..models import Product
-from ..schemas import Product as ProductSchema, ProductCreate, CategoryStats
 
 
 # Setup The Router.
