@@ -1,10 +1,13 @@
 """Stub file to for the bulk of the code challenge."""
 
-# A few imports/Hints.
-# Required for setting up the DB on init. Why?
-from fastapi import APIRouter, Depends, HTTPException, status
-from sqlalchemy.orm import Session
-from sqlalchemy.exc import IntegrityError
+from fastapi import APIRouter
+
+# A few imports/Hints of what might be helpful here...
+# from fastapi import APIRouter, Depends, HTTPException, status
+# from sqlalchemy.orm import Session
+# from sqlalchemy.exc import IntegrityError
+# from ..schemas import Product as ProductSchema, ProductCreate, CategoryStats
+
 from ..models import Product
 from ..schemas import Product as ProductSchema, ProductCreate, CategoryStats
 
