@@ -16,6 +16,10 @@ Base = declarative_base()
 
 
 def init_db():
+    """Creates `test.db` at local path.
+
+    Populates if it does not already exist. OR it's empty.
+    """
     # Create all tables first
     Base.metadata.create_all(bind=engine)
 
