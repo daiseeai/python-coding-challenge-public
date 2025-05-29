@@ -37,6 +37,10 @@ class Product(ProductBase):
 
 
 class CategoryStats(BaseModel):
+    """Idea for a bonus endpoint categoery return type...
+
+    Could be used to return some useful stats of a category.
+    """
     category: str
     product_count: int
     avg_price: float
